@@ -1,0 +1,64 @@
+server:
+  port: 8083
+  servlet-path: "/"
+  display-name: "SeleniumScraper"
+  ssl.enabled: false
+#security:
+#  basic.enabled: false
+#  user.name: root
+#  user.password: root
+
+
+# Log Level — ERROR, WARN, INFO, DEBUG, TRACE or OFF.
+
+logging:
+#    file: Captains.log
+    level:
+        com.gargoylesoftware: OFF
+        org:
+            apache.http.client.protocol.ResponseProcessCookies: ERROR
+            springframework:
+              web: INFO
+              data.document.mongodb: DEBUG
+              boot.logging: INFO
+    level.: WARN
+
+
+# ###########################################################
+# spring config and NoSQL Mongodb config
+# ###########################################################
+
+
+
+#spring:
+##  mandatory-file-encoding: UTF-8
+#  # MONGODB (MongoProperties)
+#  data:
+#    mongodb:
+##      authentication:
+##     database:  # Authentication database name.
+#      database: test # Database name.
+#
+#      field-naming-strategy: org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategy # Fully qualified name of the FieldNamingStrategy to use.
+##      grid-fs-database: # GridFS database name.
+#      host: localhost # Mongo server host. Cannot be set with uri.
+#      port: 27017 # Mongo server port. Cannot be set with uri.
+#      repositories.enabled: true # Enable Mongo repositories.
+##      uri: mongodb://localhost/test # Mongo database URI. Cannot be set with host, port and credentials.
+##      username: # Login user of the mongo server. Cannot be set with uri.
+##      password: # Login password of the mongo server. Cannot be set with uri.
+#  http:
+#      encoding.charset: UTF-8
+#      multipart.max-request-size: 10MB
+#  h2:
+#    console:
+#      enabled: false
+#      path: /console
+#      settings:
+#        web-allow-others: true
+#  activemq:
+#    pool:
+#      max-connections: 10
+
+
+
