@@ -1,8 +1,7 @@
 package springBootMain;
 
 import org.openqa.selenium.WebElement;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import selenium.HtmlAPI;
 
 
@@ -11,13 +10,11 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-@SpringBootApplication
-public class SpringBootSeleniumMain {
+
+public class JavaMain {
 
 
 	public static void main(String[] args) {
-
-		SpringApplication.run(SpringBootSeleniumMain.class, args);
 
 
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
